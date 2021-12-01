@@ -9,9 +9,15 @@ public class Main {
         int height = round1.getHeight();
         player1.setDistance(distance);
         player1.setHeight(height);
-        Team[] rocket = {player1, player2, player3, player4};
-        for (Team player : rocket) {
-            System.out.println(player.info());
+        player2.setDistance(distance);
+        player2.setHeight(height);
+        player3.setDistance(distance);
+        player3.setHeight(height);
+        player4.setDistance(distance);
+        player4.setHeight(height);
+        TryCourse[] rocket = {player1, player2, player3, player4};
+        for (TryCourse player : rocket) {
+            System.out.println(player);
             System.out.println(player.resultRun());
             System.out.println(player.resultJump());
         }

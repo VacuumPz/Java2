@@ -13,13 +13,12 @@ public class Team extends Player {
         this.height = height;
     }
 
-    public String info() {
-        return name + ", " + run + ", " + jump;
-    }
+    @Override
     public String resultJump() {
         if (jump >= height) return "Участник " + name + " прыгнул на высоту " + height + " метров.";
         else return "Участник " + name + " не смог прыгнуть на высоту " + height + " метров.";
     }
+    @Override
     public String resultRun() {
         if (run >= distance) return "Участник " + name + " пробежал " + distance + " метров.";
         else return "Участник " + name + " не смог пробежать " + distance + " метров.";
