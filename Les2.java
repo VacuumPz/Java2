@@ -1,8 +1,6 @@
 import java.util.Arrays;
 import static java.lang.Integer.valueOf;
 
-import static java.lang.Integer.valueOf;
-
 class Les2 {
     public static void main(String[] args) {
         Les2 main = new Les2();
